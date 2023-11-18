@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+body{
+    background-color: #1D1D23;
+    color: #FFFF;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+}
+.heading{
+text-align: center;
+font-family: Roboto;
+
+font-size: 2rem;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+}
+.timer-body{
+    margin: 30px 0;
+    width: 600px;
+    min-width: 350px;
+    height: 5rem;
+    flex-shrink: 0;
+    background-color: #34344A;
+    border-radius: 19px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px;
+}
+.timer-body > p {
+color: #FFF;
+font-family: Roboto;
+font-size: 24px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+#hour,#second{
+    width: 35px;
+    padding: 5px;
+    color: #FFFF;
+    background-color: #34344A;
+    outline: none;
+    border: none;
+    /* border-bottom: 1px msolid white; */
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 2px solid #FFF;
+    appearance: none;
+}
+#minute{
+    width: 33px;
+    padding: 5px;
+    color: #FFFF;
+    background-color: #34344A;
+    outline: none;
+    border: none;
+    /* border-bottom: 1px msolid white; */
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 2px solid #FFF;
+    appearance: none;
+}
+#hour::placeholder,#minute::placeholder,#second::placeholder{
+    color: #FFFF;
+    font-size: 20px;
+    font-weight: 500;
+    /* borde */
+}
+.timer-body > p > button{
+    /* width: 60px; */
+    padding: 10px 35px;
+    border-radius: 26px;
+    background-color: #F0F757;
+    border: none;
+}
+#hour-bar > span{
+    padding: 0 3px;
+}
+.btn > button{
+    background-color: #39393E;
+    width: 14vw;
+    height: 46px;
+    min-width: 120px;
+    border-radius: 50px;
+    border: none;
+    color: #FFFF;
+    margin: 10px 0;
+    font-size: 18px;
+}
+#result{
+    margin: 30px 0;
+    width: 600px;
+    min-width: 350px;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 25px;
+    font-size: 20px;
+    font-weight: 500;
+}
+#hour-bar > input[type="number"] {
+    /* Hide the default up/down buttons */
+    appearance: textfield;
+    -webkit-appearance: textfield; /* For some older versions of Safari */
+    -moz-appearance: textfield; /* For some older versions of Firefox */
+  }

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Timer</title>
+</head>
+<body>
+  <div class="container">
+    <div>
+        <h3 class="heading">Multiple Timers App</h3>
+    </div>
+    <div class="timer-body">
+        <p>Set Time :</p>
+        <p id="hour-bar" >
+           
+            <input id="hour" type="number" placeholder="HH" min="00" max="24" name="hour" style="appearance: textfield;-webkit-appearance: textfield;-moz-appearance: textfield;">
+            <span>:</span> 
+            <input id="minute" type="number" placeholder="MM" maxlength="2" name="minute">
+            <span>:</span> 
+            <input id="second" type="number" placeholder="SS" maxlength="2" name="second" >
+        </p>
+        <p><button id="start" type="submit">Set</button></p>
+    </div>
+    <div class="btn">
+        <button  type="submit">Current Timers</button>
+    </div>
+    <div id="result">
+        <span id="noTimer">You have no timers currently!</span>
+        <p id="clock"></p>
+    </div>
+  </div>
+  <script src="./script.js"></script>
+</body>
+</html>

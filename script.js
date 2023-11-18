@@ -5,29 +5,6 @@ const second = document.getElementById('second');
 const result = document.getElementById('result');
 const start = document.getElementById('start');
 
-
-
-
-
-
-//         start.addEventListener('click',()=>{
-
-//             const res = document.createElement('p');
-//                 res.innerHTML = `<div class="timer-body">
-//                 <p>Time Left :</p>
-//                 <p id="hour-bar" >
-
-//                 <span id="hr" style="border-bottom: 2px solid white;">HH</span>
-//                 <span>:</span> 
-//                 <span id="mn" style="border-bottom: 2px solid white;">MM</span>
-//                 <span>:</span> 
-//                 <span id="sec"  style="border-bottom: 2px solid white;">SS</span>
-//                 </p>
-//                 <p><button id="start" type="submit">Delete</button></p>
-// </div>`
-// result.appendChild(res);
-//         })
-
 let hoursDisplay = 0;
 let minutesDisplay = 0;
 let secondsDisplay = 0;
@@ -87,20 +64,6 @@ start.addEventListener('click', () => {
     startTimer(duration)
 });
 
-// document.getElementById('delete').addEventListener('click', function () {
-//     clearInterval(intervalId);
-//     timerRunning = false;
-//     document.getElementById('noTimer').innerText = '';
-//     console.log("aaa")
-// });
-// document.querySelector('.active').addEventListener('click', () => {
-//     clearInterval(intervalId);
-//     timerRunning = false;
-//     document.getElementById('noTimer').innerText = '';
-
-// });
-
-console.log(document.getElementById("delete"));
 function onClickDelete(){
     clearInterval(intervalId);
     timerRunning = false;
